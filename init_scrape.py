@@ -51,7 +51,6 @@ def scrape():
                 job_info_1 = full_job_info.find_all("div", class_=re.compile(r'row attr-job*'))
                 job_info_2 = full_job_info.find_all("div", class_='row ')
                 job_info_3 = full_job_info.find_all("div", class_='row comparison')
-
                 # The following is hard-coded to keep track of how many parameters are in each job_info_#
                 job_attr = {}
                 for job_detail in job_info_1:
